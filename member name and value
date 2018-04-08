@@ -1,0 +1,10 @@
+#Write a Python program to create an Enum object and display a member name and value
+from enum import Enum
+
+class fruits(Enum):
+    mango = 10
+    apple = 0
+    orange = 9
+    papaya = 8
+print('\nfruits {}:'.format(fruits.mango.name))
+print('\nfruits {}:'.format(fruits.mango.value))
