@@ -1,0 +1,10 @@
+#Write a Python program to iterate over an enum class and display individual member and their value
+
+#from enum import Enum
+
+class fruits(Enum):
+    mango = 10
+    apple = 0
+    orange = 8
+for data in fruits:
+    print('{:4} = {}'.format(data.name, data.value))
