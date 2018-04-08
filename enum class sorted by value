@@ -1,0 +1,11 @@
+#Write a Python program to display all the member name of an enum class ordered by their values.
+
+import enum
+
+class fruits(enum.IntEnum):
+    mango = 10000
+    apple = 20
+    pineapple = 39
+    orange = 400
+print('The Best Fruits:')
+print('\n'.join(' ' + f.name for f in sorted(fruits)))
